@@ -1,0 +1,16 @@
+disabled_rules: # rule identifiers to exclude from running
+ - nesting
+  - large_tuple
+  - unused_closure_parameter
+ - trailing_whitespace
+  - type_name
+  - xctfail_message
+#included: # paths to include during linting. `--path` is ignored if present. takes precendence over `excluded`.
+
+excluded: # paths to ignore during linting. overridden by `included`.
+  - Carthage
+  - Pods
+  - Modules
+
+identifier_name:
+  min_length: 2
